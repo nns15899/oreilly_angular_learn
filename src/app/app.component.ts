@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'waiters-app';
+  today: Date = new Date();
+
+
+  user: any = { first: "Nirbhay", last: 1999 }
 }
