@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 import { routing } from './app.router';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
@@ -24,6 +25,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     RouterModule,      //  <-- Needed for routing
     routing,           // <-- The routing table itself
   ],
